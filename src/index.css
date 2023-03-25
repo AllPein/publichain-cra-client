@@ -1,13 +1,85 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-2xl;
+    font-weight: bold;
+  }
+  h2 {
+    @apply text-xl;
+    font-weight: bold;
+  }
+  h3 {
+    @apply text-lg;
+    font-weight: bold;
+  }
+  h4 {
+    @apply text-base;
+    font-weight: bold;
+  }
+  h5 {
+    @apply text-sm;
+    font-weight: bold;
+  }
+  h6 {
+    @apply text-xs;
+    font-weight: bold;
+  }
+
+  ul {
+    list-style: disc;
+  }
+  ol {
+    list-style: decimal;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.break-word {
+  word-break: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+mark {
+  background-color: #facc15;
+  border-radius: 0.4rem;
+  padding: 0.2rem;
+}
+
+.codex-editor__redactor {
+  padding-bottom: 0 !important;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.selectable.table tr {
+  cursor: pointer;
+}
+
+.ui.grid .ui.fitted.divider {
+  margin: 0 1rem;
+}
+
+.ant-layout {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 0.8rem;
+  height: 0.8rem;
 }

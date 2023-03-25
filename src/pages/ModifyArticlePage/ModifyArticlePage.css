@@ -1,0 +1,16 @@
+.textarea {
+  font-size: 4.5rem;
+  text-align: center;
+  display: block;
+  width: 50%;
+  overflow: hidden;
+  resize: none;
+  border: none;
+  outline: none;
+  cursor: text;
+}
+
+.textarea[contenteditable]:empty::before {
+  content: 'Your title goes here';
+  color: gray;
+}
