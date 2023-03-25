@@ -136,7 +136,7 @@ export const ArticleInfo = ({ accountInfo }) => {
           <PlayCircleIcon className="ml-1 h-5 w-5 text-indigo-600" />
         </a>
       ),
-    [speaking, textToSpeak],
+    [cancel, speak, speaking, textToSpeak],
   );
 
   if (!articleInfo) {

@@ -101,7 +101,7 @@ class ProjectService implements IProjectService {
         {
           baseURL: 'https://api.nftport.xyz/v0/nfts',
           headers: {
-            Authorization: process.env.VITE_NFT_AUTH_TOKEN,
+            Authorization: process.env.REACT_APP_NFT_AUTH_TOKEN,
           },
         },
       );
