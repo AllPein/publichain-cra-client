@@ -18,6 +18,7 @@ const ArticlePage: React.FC = () => {
     return () => {
       dispatch(ArticleAction.resetState());
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
