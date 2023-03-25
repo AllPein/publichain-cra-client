@@ -71,6 +71,7 @@ export const ModifyArticle: FC<Props> = ({ isEditing }) => {
 
   const handlePublish = async () => {
     const savedData = await onSave();
+
     /* Don't ever do that!*/
     const headingValue = (headingRef as any)?.current.childNodes[0].data;
     dispatch(LoaderAction.setLoading('publish'));

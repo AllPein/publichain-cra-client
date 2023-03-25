@@ -35,8 +35,6 @@ const AccountPage = lazy(
   'AccountPage',
 );
 
-const REDIRECT_PATH = '/explore';
-
 const routes = [
   {
     path: '/create-article',
@@ -67,6 +65,8 @@ const routes = [
     children: <ModifyArticlePage isEditing={true} />,
   },
 ];
+
+const REDIRECT_PATH = '/explore';
 
 const Root = () => {
   const renderRoot = () => (
